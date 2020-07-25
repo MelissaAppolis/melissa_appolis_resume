@@ -1,0 +1,302 @@
+/* button style */
+.btn-outline-dark {
+    font-weight: 250;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 0px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: inline-block;
+    transition: all 0.5s;
+    margin: 5px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.btn-outline-dark:hover {
+    font-weight: 250;
+    font-size: 20px;
+    background-color: grey;
+    border-color: grey;
+}
+
+.btn-outline-dark span {
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+    display: inline-block;
+}
+
+.btn-outline-dark span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+}
+
+.btn-outline-dark:hover span {
+    padding-right: 15px;
+}
+
+.btn-outline-dark:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+    background-image: url('Images/backgroundImage7.jpg');
+}
+
+body {
+    display: -ms-flexbox;
+    display: flex;
+    color: black;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+    max-width: 90em;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+    margin-bottom: 2rem;
+}
+
+.masthead-brand {
+    margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+    padding: .25rem 0;
+    font-weight: 400;
+    font-size: 22px;
+    color: black;
+    background-color: transparent;
+    border-bottom: .20rem solid transparent;
+    text-shadow: 0 .05rem .02rem rgba(0, 0, 0, .5);
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+    border-bottom-color: cadetblue;
+}
+
+.nav-masthead .nav-link+.nav-link {
+    margin-left: 1rem;
+}
+
+.nav-masthead .active {
+    color: grey;
+    border-bottom-color: cadetblue;
+}
+
+@media (min-width: 48em) {
+    .masthead-brand {
+        float: left;
+    }
+
+    .nav-masthead {
+        float: right;
+    }
+}
+
+/* introduction div */
+.intro {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.cover-heading {
+    color: cadetblue;
+}
+
+
+.lead {
+    color: dimgrey;
+    text-shadow: none;
+    font-weight: 350;
+}
+
+.image1 {
+    width: 360px;
+    padding-left: 70px;
+    border-top: 10px solid white;
+    border-right: 10px solid white;
+   	filter: grayscale(100%);
+}
+
+/*
+ * Cover
+ */
+.cover {
+    padding: 0 1.5rem;
+}
+
+/* skills, eductaion, experience div */
+.marketing {
+    max-width: 90em;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing .circle {
+    height: 190px;
+    width: 190px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.circle .fa-user-graduate {
+    font-size: 140px;
+    margin-top: 20px;
+    color: gainsboro;
+}
+
+.circle .fa-check-square-o {
+    font-size: 140px;
+    margin-top: 30px;
+    color: gainsboro;
+}
+
+.circle .fa-briefcase {
+    font-size: 140px;
+    margin-top: 30px;
+    color: gainsboro;
+}
+
+.marketing h2 {
+    font-weight: 300;
+    margin-top: 20px;
+    color: black;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+    text-shadow: none;
+    font-size: 20px;
+    color: darkslategray;
+    font-weight: 420;
+}
+
+.marketing ul {
+    list-style-type: none;
+    text-shadow: none;
+    font-size: 20px;
+    color: darkslategray;
+}
+
+/* featured divider */
+.featurette-divider {
+    margin: 1rem 0;
+    /* Space out the Bootstrap <hr> more */
+}
+
+/* featured project */
+.featuredProjectHeading {
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 1;
+    letter-spacing: 0rem;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 9px;
+    padding-left: 5px;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.babyBoutiqueProject {
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.featuredProjectText {
+    width: 580px;
+}
+
+.image2 {
+    width: 600px;
+    padding-left: 70px;
+    border-top: 10px solid white;
+    border-right: 10px solid white;
+}
+
+@media (min-width: 40em) {
+    .featurette-heading {
+        font-size: 45px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 1rem;
+    }
+}
+
+/* contact details */
+.contactHeading {
+    font-size: 60px;
+    margin-top: 20px;
+    color: rosybrown;
+}
+
+.contactEmail {
+    font-size: 50px;
+    color: black;
+    font-weight: 200;
+}
+
+.contactEmail:hover {
+    color: cadetblue;
+}
+
+.contactSocialHeading {
+    margin-top: 20px;
+    font-weight: 200px;
+    letter-spacing: 3px;
+}
+
+.contactSocialLinks a {
+    font-size: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+}
+
+.contactSocialLinks a:hover {
+    color: cadetblue;
+}
+
+/*
+ * Footer
+ */
+
+footer {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.mastfoot h6 {
+    color: dimgrey;
+    font-weight: 100;
+}
